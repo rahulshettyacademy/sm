@@ -22,7 +22,7 @@ public class DataReader {
 	String jsonContent = 	FileUtils.readFileToString(new File(System.getProperty("user.dir")+"//src//test//java//rahulshettyacademy//data//PurchaseOrder.json"), 
 			StandardCharsets.UTF_8);
 	
-	//String to HashMap- Jackson Datbind
+	//String to HashMap- Jackson Databind
 	
 	ObjectMapper mapper = new ObjectMapper();
 	  List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
