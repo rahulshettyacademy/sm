@@ -7,7 +7,7 @@ public class ExtentReporterNG {
 
 	
 	public static ExtentReports getReportObject()
-	{//hiss
+	{//hisswel
 		String path =System.getProperty("user.dir")+"//reports//index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("Web Automation Results");
